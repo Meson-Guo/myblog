@@ -5,11 +5,17 @@
   
 
 
-<html class="theme-next pisces use-motion">
+<html class="theme-next pisces use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
 
 
 
@@ -27,9 +33,12 @@
 
 
 
+
+
+
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -42,20 +51,38 @@
   
     
     
-  
-
-  
-
-  
-
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -63,9 +90,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -77,7 +104,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.1" />
 
 
 
@@ -86,41 +113,54 @@
 
 <meta name="description" content="love life   enjoy coding">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Meson's Room">
+<meta property="og:title" content="Meson&#39;s Room">
 <meta property="og:url" content="http://meson.space/index.html">
-<meta property="og:site_name" content="Meson's Room">
+<meta property="og:site_name" content="Meson&#39;s Room">
 <meta property="og:description" content="love life   enjoy coding">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Meson's Room">
+<meta name="twitter:title" content="Meson&#39;s Room">
 <meta name="twitter:description" content="love life   enjoy coding">
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left"},
+    sidebar: {"position":"left","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 6325932767859181000,
-      author: '主编大人'
+      userId: '6325932767859181000',
+      author: '九哥'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
-
   <link rel="canonical" href="http://meson.space/"/>
 
-  <title> Meson's Room - love life   enjoy coding </title>
+
+
+
+
+  <title>Meson's Room</title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
+
+
 
 
 
@@ -128,7 +168,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?7fa047b947cc3e0d38f847a535d552e5";
+      hm.src = "https://hm.baidu.com/hm.js?7fa047b947cc3e0d38f847a535d552e5";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -141,36 +181,43 @@
 
 
 
+
+
+
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
+  <div class="container sidebar-position-left 
    page-home 
  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Meson's Room</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Meson's Room</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">生命不息  学习不止</p>
+      
   </div>
-  <p class="site-subtitle">生命不息  学习不止</p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -185,7 +232,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -195,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -205,7 +252,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于我
+            About
           </a>
         </li>
       
@@ -215,7 +262,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -225,17 +272,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
+            Tags
           </a>
         </li>
       
@@ -245,7 +282,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-comments"></i> <br />
             
-            留言
+            Guestbook
           </a>
         </li>
       
@@ -255,40 +292,19 @@
             
               <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />
             
-            我的爱情
+            Mylove
           </a>
         </li>
       
 
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
       
     </ul>
   
 
   
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
 </nav>
+
+
 
  </div>
     </header>
@@ -303,13 +319,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2017/06/04/MySQL常用资源/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -317,300 +343,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/09/13/获取网络参数脚本/" itemprop="url">
-                  一键获取win7网络参数
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/06/04/MySQL常用资源/" itemprop="url">MySQL常用资源</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-13T15:30:45+08:00" content="2016-09-13">
-              2016-09-13
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-04T22:18:36+08:00">
+                2017-06-04
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术类/" itemprop="url" rel="index">
-                    <span itemprop="name">技术类</span>
-                  </a>
-                </span>
-
-                
-                
-
+                <span class="post-meta-item-text">In</span>
               
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/13/获取网络参数脚本/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/13/获取网络参数脚本/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/09/13/获取网络参数脚本/" class="leancloud_visitors" data-flag-title="一键获取win7网络参数">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          可以一键获取win7网络参数
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/13/获取网络参数脚本/">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
               
-                
-                <a class="post-title-link" href="/2016/09/13/Shell文件读取相关脚本/" itemprop="url">
-                  Shell文件读取相关脚本
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-13T15:23:45+08:00" content="2016-09-13">
-              2016-09-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/13/Shell文件读取相关脚本/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/13/Shell文件读取相关脚本/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/09/13/Shell文件读取相关脚本/" class="leancloud_visitors" data-flag-title="Shell文件读取相关脚本">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          Shell读取文件相关脚本
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/13/Shell文件读取相关脚本/">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/08/MySQL常用资源/" itemprop="url">
-                  MySQL常用资源
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-08T10:16:17+08:00" content="2016-09-08">
-              2016-09-08
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/资源/" itemprop="url" rel="index">
                     <span itemprop="name">资源</span>
                   </a>
@@ -618,7 +386,6 @@
 
                 
                 
-
               
             </span>
           
@@ -626,33 +393,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/08/MySQL常用资源/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/08/MySQL常用资源/" itemprop="commentsCount"></span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/06/04/MySQL常用资源/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/04/MySQL常用资源/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/09/08/MySQL常用资源/" class="leancloud_visitors" data-flag-title="MySQL常用资源">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -662,12 +425,18 @@
       
         
           mysql 常用指令
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/08/MySQL常用资源/">
-              阅读全文 &raquo;
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/04/MySQL常用资源/">
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -685,6 +454,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -696,13 +467,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/11/18/URL和URI区别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -710,46 +491,49 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/08/28/play2多数据源的配置/" itemprop="url">
-                  play2 多数据源的配置
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/11/18/URL和URI区别/" itemprop="url">URL和URI区别</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-28T20:35:56+08:00" content="2016-08-28">
-              2016-08-28
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-18T15:23:45+08:00">
+                2016-11-18
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术类/" itemprop="url" rel="index">
-                    <span itemprop="name">技术类</span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
                 
                 
-
               
             </span>
           
@@ -757,33 +541,769 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/28/play2多数据源的配置/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/28/play2多数据源的配置/" itemprop="commentsCount"></span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/18/URL和URI区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/18/URL和URI区别/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/08/28/play2多数据源的配置/" class="leancloud_visitors" data-flag-title="play2 多数据源的配置">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          用自己的方式讲述URL和URI的区别
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/11/18/URL和URI区别/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/10/10/Java中Class对象和实例的详解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/10/10/Java中Class对象和实例的详解/" itemprop="url">Java中Class对象和实例的详解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-10T15:23:45+08:00">
+                2016-10-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/10/10/Java中Class对象和实例的详解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/10/Java中Class对象和实例的详解/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          详解class实例和对象的不同，及获取Class对象的三种方式
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/10/10/Java中Class对象和实例的详解/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/10/08/Java之代理篇/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/10/08/Java之代理篇/" itemprop="url">Java之代理篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-08T18:00:45+08:00">
+                2016-10-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/10/08/Java之代理篇/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/08/Java之代理篇/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          代理是基本的设计模式之一，他是为你提供不同的操作，用插入的代替实际的对象的对象。动态代理可以动态的创建代理并动态的处理对所代理方法的调用
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/10/08/Java之代理篇/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/09/13/获取网络参数脚本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/09/13/获取网络参数脚本/" itemprop="url">一键获取win7网络参数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-13T15:30:45+08:00">
+                2016-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术类/" itemprop="url" rel="index">
+                    <span itemprop="name">技术类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/09/13/获取网络参数脚本/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/13/获取网络参数脚本/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          可以一键获取win7网络参数
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/09/13/获取网络参数脚本/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/09/13/Shell文件读取相关脚本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/09/13/Shell文件读取相关脚本/" itemprop="url">Shell文件读取相关脚本</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-13T15:23:45+08:00">
+                2016-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/09/13/Shell文件读取相关脚本/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/13/Shell文件读取相关脚本/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          Shell读取文件相关脚本
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/09/13/Shell文件读取相关脚本/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/08/28/play2多数据源的配置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/08/28/play2多数据源的配置/" itemprop="url">play2 多数据源的配置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-28T20:35:56+08:00">
+                2016-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术类/" itemprop="url" rel="index">
+                    <span itemprop="name">技术类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/08/28/play2多数据源的配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/28/play2多数据源的配置/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
 
     <div class="post-body" itemprop="articleBody">
 
@@ -793,16 +1313,20 @@
       
         
           
-          
-前瞻   在平时我么做项目时，因为可能会碰到各种各样的需求，所以必然会碰到多数据源协同开发的情况，   play是一种高效快速开发的开源框架，目前在业内也得到了一定认可，但国内使用的不多，大部分使用者都在国外，所以你懂得，国内的资料并不是很多。   play的多数据源配置主要分为两个模块：    
-          ...
+            <a id="more"></a>
+<h2 id="前瞻"><a href="#前瞻" class="headerlink" title="前瞻"></a>前瞻</h2><p>   在平时我么做项目时，因为可能会碰到各种各样的需求，所以必然会碰到多数据源协同开发的情况，<br>   play是一种高效快速开发的开源框架，目前在业内也得到了一定认可，但国内使用的不多，大部分使用者都在国外，所以你懂得，国内的资料并不是很多。<br>   play的多数据源配置主要分为两个模块：<br>           一、application.conf的配置<br>               主要针对数据源的配置<br>           二、Model的配置<br>              主要针对所使用哪一个数据源进行配置<br>1、application.conf的配置<br>  不多说了直接上代码：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#mysql</span> connection</div><div class="line">db<span class="selector-class">.mysql</span><span class="selector-class">.driver</span>=com<span class="selector-class">.mysql</span><span class="selector-class">.jdbc</span><span class="selector-class">.Driver</span></div><div class="line">db<span class="selector-class">.mysql</span><span class="selector-class">.url</span>=<span class="string">"mysql://username:password@localhost/test?characterEncoding=utf-8"</span></div><div class="line"></div><div class="line"><span class="selector-id">#postgresql</span>  connection</div><div class="line">db<span class="selector-class">.default</span><span class="selector-class">.driver</span>=org<span class="selector-class">.postgresql</span><span class="selector-class">.Driver</span></div><div class="line">db<span class="selector-class">.default</span><span class="selector-class">.url</span>=<span class="string">"jdbc:postgresql://localhost:5432/test?characterEncoding=utf-8"</span></div><div class="line">db<span class="selector-class">.default</span><span class="selector-class">.user</span>=<span class="string">"postgres"</span>  </div><div class="line">db<span class="selector-class">.default</span><span class="selector-class">.password</span>=<span class="string">"password"</span></div></pre></td></tr></table></figure></p>
+<p>  这里注意一般我们使用db.default.<em>来进行数据源的配置，其实这里的default就是数据源的名字，系统默认叫default 也可叫其他的<br>  就像这里我叫它mysql一样。这样就可以了吗 当然不行了，因为play的数据操作是通过model和Ebean来实现的，所以必须要给新加的数据源指向model<br>  即为：<br>       ebean.default=”models.</em>“<br>       ebean.mysql=”models.*”<br>       到此配置文件的配置就结束了</p>
+<p>2、对Model的配置</p>
+<p>  现在两个数据源都已经配置好了，单独使用任意一个都没有问题，但是你改怎么告诉它使用哪一个数据源呢<br>  public static Finder<long,columninfo> find = new Finder<long,columninfo>(“mysql”,Long.class,ColumnInfo.class);<br>  我们可以在Model中在生成Finder对象时指定，如上：<br>  其实从Finder的一个构造函数也可以看出来<br><figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line">  * Creates a finder <span class="keyword">for</span> entity <span class="keyword">of</span> <span class="keyword">type</span> <span class="type">&lt;code&gt;T&lt;/code&gt; </span><span class="keyword">with</span> ID <span class="keyword">of</span> <span class="keyword">type</span> <span class="type">&lt;code&gt;I&lt;/code&gt;, </span>using a specific Ebean server.</div><div class="line">  */</div><div class="line">public Finder(String serverName, Class&lt;I&gt; idType, Class&lt;T&gt; <span class="keyword">type</span>) &#123;</div><div class="line">    this.<span class="keyword">type</span> <span class="type">= </span><span class="keyword">type</span>;</div><div class="line">    this.idType = idType;</div><div class="line">    this.serverName = serverName;</div><div class="line">&#125;</div></pre></td></tr></table></figure></long,columninfo></long,columninfo></p>
+<p>   当然如果你没有指定，如下：<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> Finder&lt;<span class="keyword">Long</span>,ColumnInfo&gt; <span class="keyword">find</span> = <span class="keyword">new</span> Finder&lt;<span class="keyword">Long</span>,ColumnInfo&gt;(<span class="keyword">Long</span>.<span class="keyword">class</span>,ColumnInfo.<span class="keyword">class</span>);</div></pre></td></tr></table></figure></p>
+<p>  系统就默认的访问default，这里就是Postgresql。  好了，接下来你就可以在play框架中愉快的使用多数据源了</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/28/play2多数据源的配置/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -820,6 +1344,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -831,13 +1357,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/08/08/实习季/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -845,38 +1381,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/08/08/实习季/" itemprop="url">
-                  实习季
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/08/08/实习季/" itemprop="url">实习季</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T21:10:16+08:00" content="2016-08-08">
-              2016-08-08
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-08T21:10:16+08:00">
+                2016-08-08
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/实习季/" itemprop="url" rel="index">
                     <span itemprop="name">实习季</span>
                   </a>
@@ -884,7 +1424,6 @@
 
                 
                 
-
               
             </span>
           
@@ -892,33 +1431,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/08/08/实习季/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/实习季/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/实习季/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/08/08/实习季/" class="leancloud_visitors" data-flag-title="实习季">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -928,12 +1463,18 @@
       
         
           关于实习，我想来想去应该说点什么，算是留下一点回忆吧。
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/08/08/实习季/">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -951,6 +1492,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -962,13 +1505,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/07/29/Java 中AccessibleObject那些事儿/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -976,38 +1529,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/07/29/Java 中AccessibleObject那些事儿/" itemprop="url">
-                  Java 中AccessibleObject那些事儿
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/07/29/Java 中AccessibleObject那些事儿/" itemprop="url">Java 中AccessibleObject那些事儿</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-29T11:19:29+08:00" content="2016-07-29">
-              2016-07-29
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-07-29T11:19:29+08:00">
+                2016-07-29
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/技术类/" itemprop="url" rel="index">
                     <span itemprop="name">技术类</span>
                   </a>
@@ -1015,7 +1572,6 @@
 
                 
                 
-
               
             </span>
           
@@ -1023,33 +1579,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/07/29/Java 中AccessibleObject那些事儿/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/29/Java 中AccessibleObject那些事儿/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/29/Java 中AccessibleObject那些事儿/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/07/29/Java 中AccessibleObject那些事儿/" class="leancloud_visitors" data-flag-title="Java 中AccessibleObject那些事儿">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1059,12 +1611,18 @@
       
         
           java 中AccessibleObject 和反射机制
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/07/29/Java 中AccessibleObject那些事儿/">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1082,6 +1640,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1093,13 +1653,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/07/18/SVN 常用资源/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -1107,38 +1677,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/07/18/SVN 常用资源/" itemprop="url">
-                  SVN 常用资源
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/07/18/SVN 常用资源/" itemprop="url">SVN 常用资源</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-18T15:23:45+08:00" content="2016-07-18">
-              2016-07-18
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-07-18T15:23:45+08:00">
+                2016-07-18
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/学习笔记/" itemprop="url" rel="index">
                     <span itemprop="name">学习笔记</span>
                   </a>
@@ -1146,7 +1720,6 @@
 
                 
                 
-
               
             </span>
           
@@ -1154,33 +1727,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/07/18/SVN 常用资源/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/18/SVN 常用资源/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/18/SVN 常用资源/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/07/18/SVN 常用资源/" class="leancloud_visitors" data-flag-title="SVN 常用资源">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1190,12 +1759,18 @@
       
         
           SVN 常用指令
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/07/18/SVN 常用资源/">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1213,6 +1788,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1224,13 +1801,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/06/29/Git指令集/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -1238,38 +1825,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/06/29/Git指令集/" itemprop="url">
-                  Git 指令集
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/06/29/Git指令集/" itemprop="url">Git 指令集</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-29T11:19:29+08:00" content="2016-06-29">
-              2016-06-29
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-06-29T11:19:29+08:00">
+                2016-06-29
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/资源/" itemprop="url" rel="index">
                     <span itemprop="name">资源</span>
                   </a>
@@ -1277,7 +1868,6 @@
 
                 
                 
-
               
             </span>
           
@@ -1285,33 +1875,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/06/29/Git指令集/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/29/Git指令集/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/29/Git指令集/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/06/29/Git指令集/" class="leancloud_visitors" data-flag-title="Git 指令集">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1321,17 +1907,42 @@
       
         
           
+            <a id="more"></a>
+<h2 id="库管理"><a href="#库管理" class="headerlink" title="库管理"></a>库管理</h2><h3 id="克隆库"><a href="#克隆库" class="headerlink" title="克隆库"></a>克隆库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/php/php-src.git</div><div class="line">git <span class="built_in">clone</span> --depth=1 https://github.com/php/php-src.git <span class="comment"># 只抓取最近的一次 commit</span></div></pre></td></tr></table></figure>
+<h2 id="历史管理"><a href="#历史管理" class="headerlink" title="历史管理"></a>历史管理</h2><h3 id="查看历史"><a href="#查看历史" class="headerlink" title="查看历史"></a>查看历史</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">log</span> --pretty=oneline filename <span class="comment"># 一行显示</span></div><div class="line">git show xxxx <span class="comment"># 查看某次修改</span></div></pre></td></tr></table></figure>
+<h3 id="标签功能"><a href="#标签功能" class="headerlink" title="标签功能"></a>标签功能</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">git tag <span class="comment"># 显示所有标签</span></div><div class="line">git tag -l <span class="string">'v1.4.2.*'</span> <span class="comment"># 显示 1.4.2 开头标签</span></div><div class="line">git tag v1.3 <span class="comment"># 简单打标签   </span></div><div class="line">git tag -a v1.2 9fceb02 <span class="comment"># 后期加注标签</span></div><div class="line">git tag -a v1.4 -m <span class="string">'my version 1.4'</span> <span class="comment"># 增加标签并注释， -a 为 annotated 缩写</span></div><div class="line">git show v1.4 <span class="comment"># 看某一标签详情</span></div><div class="line">git push origin v1.5 <span class="comment"># 分享某个标签</span></div><div class="line">git push origin --tags <span class="comment"># 分享所有标签</span></div></pre></td></tr></table></figure>
+<h3 id="回滚操作"><a href="#回滚操作" class="headerlink" title="回滚操作"></a>回滚操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git reset 9fceb02 <span class="comment"># 保留修改</span></div><div class="line">git reset 9fceb02 --hard <span class="comment"># 删除之后的修改</span></div></pre></td></tr></table></figure>
+<h3 id="取消文件的修改"><a href="#取消文件的修改" class="headerlink" title="取消文件的修改"></a>取消文件的修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout -- a.php <span class="comment">#  取消单个文件</span></div><div class="line">git checkout -- <span class="comment"># 取消所有文件的修改</span></div></pre></td></tr></table></figure>
+<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git rm a.php  <span class="comment"># 直接删除文件</span></div><div class="line">git rm --cached a.php <span class="comment"># 删除文件暂存状态</span></div></pre></td></tr></table></figure>
+<h3 id="移动文件"><a href="#移动文件" class="headerlink" title="移动文件"></a>移动文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git mv a.php ./<span class="built_in">test</span>/a.php</div></pre></td></tr></table></figure>
+<h3 id="查看文件修改"><a href="#查看文件修改" class="headerlink" title="查看文件修改"></a>查看文件修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git diff          <span class="comment"># 查看未暂存的文件更新 </span></div><div class="line">git diff --cached <span class="comment"># 查看已暂存文件的更新</span></div></pre></td></tr></table></figure>
+<h3 id="暂存和恢复当前staging"><a href="#暂存和恢复当前staging" class="headerlink" title="暂存和恢复当前staging"></a>暂存和恢复当前staging</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git stash <span class="comment"># 暂存当前分支的修改</span></div><div class="line">git stash apply <span class="comment"># 恢复最近一次暂存</span></div><div class="line">git stash list <span class="comment"># 查看暂存内容</span></div><div class="line">git stash apply stash@&#123;2&#125; <span class="comment"># 指定恢复某次暂存内容</span></div><div class="line">git stash drop stash@&#123;0&#125; <span class="comment"># 删除某次暂存内容</span></div></pre></td></tr></table></figure>
+<h3 id="修改-commit-历史纪录"><a href="#修改-commit-历史纪录" class="headerlink" title="修改 commit 历史纪录"></a>修改 commit 历史纪录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rebase -i 0580eab8</div></pre></td></tr></table></figure>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch develop <span class="comment"># 只创建分支</span></div><div class="line">git checkout -b master develop <span class="comment"># 创建并切换到 develop 分支</span></div></pre></td></tr></table></figure>
+<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git checkout master <span class="comment"># 切换到 master 分支</span></div><div class="line">git merge --no-ff develop <span class="comment"># 把 develop 合并到 master 分支，no-ff 选项的作用是保留原分支记录</span></div><div class="line">git rebase develop <span class="comment"># rebase 当前分支到 develop</span></div><div class="line">git branch -d develop <span class="comment"># 删除 develop 分支</span></div></pre></td></tr></table></figure>
+<h3 id="克隆远程分支"><a href="#克隆远程分支" class="headerlink" title="克隆远程分支"></a>克隆远程分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -r <span class="comment"># 显示所有分支，包含远程分支</span></div><div class="line">git checkout origin/android</div></pre></td></tr></table></figure>
+<h3 id="修复develop上的合并错误"><a href="#修复develop上的合并错误" class="headerlink" title="修复develop上的合并错误"></a>修复develop上的合并错误</h3><ol>
+<li>将merge前的commit创建一个分之，保留merge后代码</li>
+<li>将develop <code>reset --force</code>到merge前，然后<code>push --force</code></li>
+<li>在分支中rebase develop</li>
+<li>将分支push到服务器上重新merge</li>
+</ol>
+<h3 id="强制更新到远程分支最新版本"><a href="#强制更新到远程分支最新版本" class="headerlink" title="强制更新到远程分支最新版本"></a>强制更新到远程分支最新版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git reset --hard origin/master</div><div class="line">git submodule update --remote -f</div></pre></td></tr></table></figure>
+<h2 id="Submodule使用"><a href="#Submodule使用" class="headerlink" title="Submodule使用"></a>Submodule使用</h2><h3 id="克隆带submodule的库"><a href="#克隆带submodule的库" class="headerlink" title="克隆带submodule的库"></a>克隆带submodule的库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> --recursive https://github.com/chaconinc/MainProject</div></pre></td></tr></table></figure>
+<h3 id="clone主库后再去clone-submodule"><a href="#clone主库后再去clone-submodule" class="headerlink" title="clone主库后再去clone submodule"></a>clone主库后再去clone submodule</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/chaconinc/MainProject</div><div class="line">git submodule init</div><div class="line">git submodule update</div></pre></td></tr></table></figure>
+<h2 id="Git设置"><a href="#Git设置" class="headerlink" title="Git设置"></a>Git设置</h2><p>Git的全局设置在<code>~/.gitconfig</code>中，单独设置在<code>project/.git/config</code>下。</p>
+<p>忽略设置全局在<code>~/.gitignore_global</code>中，单独设置在<code>project/.gitignore</code>下。</p>
+<h3 id="设置-commit-的用户和邮箱"><a href="#设置-commit-的用户和邮箱" class="headerlink" title="设置 commit 的用户和邮箱"></a>设置 commit 的用户和邮箱</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config user.name <span class="string">"xx"</span></div><div class="line">git config user.email <span class="string">"xx@xx.com"</span></div></pre></td></tr></table></figure>
+<p>或者直接修改config文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[user]</div><div class="line">    name = xxx</div><div class="line">    email = xxx@xxx.com</div></pre></td></tr></table></figure>
+<h3 id="查看设置项"><a href="#查看设置项" class="headerlink" title="查看设置项"></a>查看设置项</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --list</div></pre></td></tr></table></figure>
+<h3 id="设置git终端颜色"><a href="#设置git终端颜色" class="headerlink" title="设置git终端颜色"></a>设置git终端颜色</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git config --global color.diff auto</div><div class="line">git config --global color.status auto</div><div class="line">git config --global color.branch auto</div></pre></td></tr></table></figure>
           
-库管理克隆库12git clone https://github.com/php/php-src.gitgit clone --depth=1 https://github.com/php/php-src.git # 只抓取最近的一次 commit
-历史管理查看历史12git log --pret
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/06/29/Git指令集/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1349,6 +1960,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1360,13 +1973,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/05/25/了解GitHub工作流【转】/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -1374,38 +1997,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/05/25/了解GitHub工作流【转】/" itemprop="url">
-                  了解GitHub工作流【转】
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/05/25/了解GitHub工作流【转】/" itemprop="url">了解GitHub工作流【转】</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-25T20:15:26+08:00" content="2016-05-25">
-              2016-05-25
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-25T20:15:26+08:00">
+                2016-05-25
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/技术类/" itemprop="url" rel="index">
                     <span itemprop="name">技术类</span>
                   </a>
@@ -1413,7 +2040,6 @@
 
                 
                 
-
               
             </span>
           
@@ -1421,33 +2047,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/05/25/了解GitHub工作流【转】/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/25/了解GitHub工作流【转】/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/25/了解GitHub工作流【转】/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/05/25/了解GitHub工作流【转】/" class="leancloud_visitors" data-flag-title="了解GitHub工作流【转】">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1457,12 +2079,18 @@
       
         
           了解GitHub工作流
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/05/25/了解GitHub工作流【转】/">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1480,6 +2108,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1491,13 +2121,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/05/13/shell指令集/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -1505,38 +2145,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/05/13/shell指令集/" itemprop="url">
-                  shell 指令集
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/05/13/shell指令集/" itemprop="url">shell 指令集</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-13T22:23:17+08:00" content="2016-05-13">
-              2016-05-13
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-13T22:23:17+08:00">
+                2016-05-13
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/资源/" itemprop="url" rel="index">
                     <span itemprop="name">资源</span>
                   </a>
@@ -1544,7 +2188,6 @@
 
                 
                 
-
               
             </span>
           
@@ -1552,33 +2195,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/05/13/shell指令集/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/13/shell指令集/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/13/shell指令集/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/05/13/shell指令集/" class="leancloud_visitors" data-flag-title="shell 指令集">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1588,12 +2227,18 @@
       
         
           shell 常用指令
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/05/13/shell指令集/">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1611,6 +2256,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1622,13 +2269,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/05/11/Linux系统中多个命令连续执行方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -1636,38 +2293,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/05/11/Linux系统中多个命令连续执行方法/" itemprop="url">
-                  Linux系统中多个命令连续执行方法
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/05/11/Linux系统中多个命令连续执行方法/" itemprop="url">Linux系统中多个命令连续执行方法</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-11T21:10:16+08:00" content="2016-05-11">
-              2016-05-11
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-11T21:10:16+08:00">
+                2016-05-11
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/技术类/" itemprop="url" rel="index">
                     <span itemprop="name">技术类</span>
                   </a>
@@ -1675,7 +2336,6 @@
 
                 
                 
-
               
             </span>
           
@@ -1683,33 +2343,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/05/11/Linux系统中多个命令连续执行方法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/11/Linux系统中多个命令连续执行方法/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/11/Linux系统中多个命令连续执行方法/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/05/11/Linux系统中多个命令连续执行方法/" class="leancloud_visitors" data-flag-title="Linux系统中多个命令连续执行方法">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1719,11 +2375,13 @@
       
         
           Linux系统中多数都是单个命令执行，但是也可以多个命令连续执行的
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/05/11/Linux系统中多个命令连续执行方法/">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1736,7 +2394,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -1753,13 +2417,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meson.space/2016/03/29/七种经典排序（C++版）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/meson.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meson's Room">
+    </span>
 
     
       <header class="post-header">
@@ -1767,38 +2441,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/03/29/七种经典排序（C++版）/" itemprop="url">
-                  七种常见经典排序算法总结（C++版）
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/03/29/七种经典排序（C++版）/" itemprop="url">七种常见经典排序算法总结（C++版）</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-29T20:10:24+08:00" content="2016-03-29">
-              2016-03-29
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-03-29T20:10:24+08:00">
+                2016-03-29
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/技术类/" itemprop="url" rel="index">
                     <span itemprop="name">技术类</span>
                   </a>
@@ -1806,7 +2484,6 @@
 
                 
                 
-
               
             </span>
           
@@ -1814,33 +2491,29 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/03/29/七种经典排序（C++版）/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/29/七种经典排序（C++版）/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/29/七种经典排序（C++版）/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
-          
-             <span id="/2016/03/29/七种经典排序（C++版）/" class="leancloud_visitors" data-flag-title="七种常见经典排序算法总结（C++版）">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1850,12 +2523,18 @@
       
         
           冒泡排序，插入排序。归并排序，快速排序，堆排序，希尔排序，选择排序，及其复杂度分析
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/03/29/七种经典排序（C++版）/">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1868,6 +2547,8 @@
     </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1911,36 +2592,45 @@
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.jpg"
+               src="/images/meson.jpg"
                alt="Meson" />
           <p class="site-author-name" itemprop="name">Meson</p>
-          <p class="site-description motion-element" itemprop="description">love life   enjoy coding</p>
+           
+              <p class="site-description motion-element" itemprop="description">love life   enjoy coding</p>
+          
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">12</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">分类</span>
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">17</span>
-                <span class="site-state-item-name">标签</span>
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -1962,11 +2652,11 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/meson.guo" target="_blank" title="知乎">
+                <a href="https://www.zhihu.com/people/meson.guo" target="_blank" title="ZhiHu">
                   
                     <i class="fa fa-fw fa-globe"></i>
                   
-                  知乎
+                  ZhiHu
                 </a>
               </span>
             
@@ -1985,15 +2675,6 @@
                     <i class="fa fa-fw fa-linkedin"></i>
                   
                   Linkedin
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="mesonguo@163.com" target="_blank" title="Email">
-                  
-                    <i class="fa fa-fw fa-letter"></i>
-                  
-                  Email
                 </a>
               </span>
             
@@ -2036,7 +2717,12 @@
           </div>
         
 
+        
+
+
       </section>
+
+      
 
       
 
@@ -2053,28 +2739,27 @@
         <div class="copyright" >
   
   &copy;  2015 - 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span id="busuanzi_container_site_pv" style='display:none'>
     本站被访问 <span id="busuanzi_value_site_pv"></span> 次
-</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Meson</span>
 </div>
 
+
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>
 </div>
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+
 
         
 
@@ -2082,9 +2767,13 @@
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -2107,50 +2796,63 @@
 
 
 
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
-  
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
 
 
 
   
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
 
 
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
   
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
 
 
 
@@ -2175,7 +2877,8 @@
 
   
     
-    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
     <script src="/js/src/hook-duoshuo.js"></script>
   
 
@@ -2184,278 +2887,35 @@
 
 
 
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
 
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
 
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
 
-    });
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+
+
 
 
   
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-  </script>
 
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-    });
-  </script>
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
 
 
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("HWsfCA2GIyWDFapxloGVrAtp-gzGzoHsz", "V2zdv81viyRSWIRyCnP2o1Bz");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
 
   
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
-</script>
 
+  
 
- <!-- 背景动画 -->
-<script type="text/javascript" src="/js/src/particle.js"></script>
-<!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/src/love.js"></script>
-<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+  
+
+  
+
+   
+<a href="https://github.com/Meson-Guo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 </body>
 </html>

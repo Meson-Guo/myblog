@@ -22,20 +22,20 @@ public class AccessibleObject extends Object implements AnnotatedElement
 AccessibleObject 类实现了AnnotatedElement，它是 Field、Method 和 Constructor 对象的基类。它提供了将反射的对象标记为在使用时取消默认 Java 语言访问控制检查的能力。对于公共成员、默认（打包）访问成员、受保护成员和私有成员，在分别使用 Field、Method 或 Constructor 对象来设置或获得字段、调用方法，或者创建和初始化类的新实例的时候，会执行访问检查。
 
 AccessibleObject 的方法：
-##isAccessible：
+## isAccessible：
 
 	public boolean isAccessible()获得此对象的 accessible 标志的值。
 
 此对象的返回值 就是accessible的标志值，一般情况下无论 public，private,protected,默认等修饰的属性的access值均为false（注意他的意思并非是访问权限而是对该自己执行安全检查）。
 
-##setAccessible：
+## setAccessible：
 ```
 	public static void setAccessible(object 　,　boolean flag) throws SecurityException
 ```
 
 使用单一安全性检查（为了提高效率）为一对象设置 accessible 标志。如果存在安全管理器，则在 ReflectPermission("suppressAccessChecks") 权限下调用 checkPermission 方法。当flag 为 true，表示不开启安全检查，但是不能更改输入 object的任何元素的可访问性（例如，如果元素对象是 Class 类的 Constructor 对象），则会引发 SecurityException。如果发生 SecurityException，对于少于（不包括）发生异常的元素的数组元素，可以将对象的可访问性设置为 flag；对于超出（包括）引发异常的元素的那些元素，则不更改其可访问性.
 
-##getAnnotation：
+## getAnnotation：
 ```
 	public <T extends Annotation> T getAnnotation(Class<T> annotationClass)
 ```
@@ -44,7 +44,7 @@ AccessibleObject 的方法：
 参数： annotationClass - 对应于注释类型的 Class 对象 　　
 返回：如果该元素的指定注释类型的注释存在于此对象上，则返回这些注释，否则返回 null
 
-##isAnnotationPresent：
+## isAnnotationPresent：
 ```
 　　public boolean isAnnotationPresent(Class<? extends Annotation> annotationClass)
 ```
@@ -53,15 +53,15 @@ AccessibleObject 的方法：
 参数：annotationClass - 对应于注释类型的 Class 对象 　　
 返回：如果指定注释类型的注释存在于此对象上，则返回 true，否则返回 false
 
-##getAnnotation：
+## getAnnotation：
 　　public Annotation[] getAnnotations()从接口 AnnotatedElement 复制的描述 ,返回此元素上存在的所有注释。（如果此元素没有注释，则返回长度为零的数组。）该方法的调用方可以随意修改返回的数组；这不会对其他调用方返回的数组产生任何影响。 　　指定者：接口 AnnotatedElement 中的 getAnnotations 　　
 返回： 此元素上存在的所有注释
 
-##getDeclaredAnnotation：
+## getDeclaredAnnotation：
 	public Annotation[] getDeclaredAnnotations()从接口 AnnotatedElement 复制的描述 　　返回直接存在于此元素上的所有注释。与此接口中的其他方法不同，该方法将忽略继承的注释。（如果没有注释直接存在于此元素上，则返回长度为零的一个数组。）该方法的调用方可以随意修改返回的数组；这不会对其他调用方返回的数组产生任何影响。 　　
 指定者： 接口 AnnotatedElement 中的 getDeclaredAnnotations 　　
 返回： 直接存在于此元素上的所有注释
-###我创建了一个Student的model:
+### 我创建了一个Student的model:
 ```
 	public class Student {
 	private String name;
@@ -94,7 +94,7 @@ AccessibleObject 的方法：
 }
 
 ```
-###首先：
+### 首先：
 ```
 	public class Reflect {
 		public static void main(String[] args) {
@@ -112,15 +112,15 @@ AccessibleObject 的方法：
 		}
 ```
 
-###这样打印出的结果：
+### 这样打印出的结果：
 ```
 	java.lang.NoSuchFieldException: name
 at java.lang.Class.getField(Class.java:1537)
 at field.Reflect.main(Reflect.java:15
 ```
-###原因是
+### 原因是
 getField不能访问private修饰的属性。
-###将其改为：
+### 将其改为：
 ```
 Field field=stu.getClass().getDeclaredField("name");
 Field field1=stu.getClass().getField("nickname");
@@ -179,5 +179,5 @@ getName()获得的值确实是修改后的值
 
 总结;仔细想了一下，其实这里的name是string 类型的，我看了一下string的源码，发现string的value 是final类型
 
-一般final类型是没办法修改的，但是通过这种方法可以进行修改的。
+一般final类型是没办法修改的，但是通过这种方法可以进行修改的。但是有一点例外如果对象的字段使用final修饰的话，则无法更改结果
 

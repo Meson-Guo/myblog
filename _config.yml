@@ -7,8 +7,8 @@ title: Meson's Room
 subtitle: 生命不息  学习不止
 description: love life   enjoy coding
 author: Meson
-eamil: mesonguo@163.com 
-language: zh-Hans
+eamil: mesonguo@163.com
+language: en
 timezone: Asia/Shanghai
 
 # URL
@@ -41,15 +41,15 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
-
 #avatar
-avatar: /images/avatar.jpg
+avatar: /images/meson.jpg
+
 #local search
 search:
   path: search.xml
-  field: post
+  field: pos
 
 # Category & Tag
 default_category: uncategorized
@@ -68,11 +68,6 @@ time_format: HH:mm:ss
 per_page: 15
 pagination_dir: page
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: next
-
 #duoshuo
 
 duoshuo_shortname: meson
@@ -84,25 +79,19 @@ duoshuo_hotartical: true
 
 baidu_analytics: 7fa047b947cc3e0d38f847a535d552e5
 
-
-#social
-
-#social:
-   # GitHub: https://github.com/Meson-Guo
-   # ZhiHu: https://www.zhihu.com/people/meson.guo
-   # CSDN: http://blog.csdn.net/gzq1108
-
-# hexo sitemap网站地图
-#sitemap:
-#path: sitemap.xml
-#baidusitemap:
-#path: baidusitemap.xml
-
 #baidu share
 baidushare: true
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/Meson-Guo/meson-guo.github.io.git
+  repo: 
+    github: https://github.com/Meson-Guo/meson-guo.github.io.git
+    gitcafe: https://git.coding.net/Meson-Guo/myblog.git
   branch: master
